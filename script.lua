@@ -118,12 +118,12 @@ espButton.Parent = scrFrame
 espButton.Text = "Start ESP"
 espButton.Size = UDim2.new(1, -20, 0, 50)
 espButton.Position = UDim2.new(0, 10, 0, 190)
-espButton.BackgroundColor3 = Color3.fromRGB(135, 206, 235)
-espButton.TextColor3 = Color3.new(0, 0, 0)
+espButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+espButton.TextColor3 = Color3.new(17, 17, 17)
 espButton.Font = Enum.Font.GothamBold
 espButton.TextSize = 16
 
-local anhsCorner = Instance.new("UICorner")
+local espCorner = Instance.new("UICorner")
 anhsCorner.CornerRadius = UDim.new(0, 12)
 anhsCorner.Parent = espButton
 
