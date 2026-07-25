@@ -1,8 +1,11 @@
+-- MainGui
 local MainGui = Instance.new("ScreenGui")
 MainGui.Name = "Scripts Hub"
 MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MainGui.ResetOnSpawn = false
 
+
+-scrFrame
 local scrFrame = Instance.new("ScrollingFrame")
 scrFrame.Name = "scrFrame"
 scrFrame.Parent = MainGui
@@ -24,6 +27,8 @@ if scrollBar then
 	scrollBar.Size = UDim2.new(0, 0, 1, 0)
 end
 
+
+-- Title
 local titleLabel = Instance.new("TextLabel")
 titleLabel.Name = "Title"
 titleLabel.Parent = scrFrame
@@ -36,6 +41,8 @@ titleLabel.Font = Enum.Font.GothamBold
 titleLabel.TextSize = 16
 titleLabel.TextXAlignment = Enum.TextXAlignment.Center
 
+
+-- YARHM
 local yarhmButton = Instance.new("TextButton")
 yarhmButton.Name = "YARHM"
 yarhmButton.Parent = scrFrame
@@ -47,10 +54,12 @@ yarhmButton.TextColor3 = Color3.new(1, 1, 1)
 yarhmButton.Font = Enum.Font.GothamBold
 yarhmButton.TextSize = 16
 
-local yCorner = Instance.new("UICorner")
-yCorner.CornerRadius = UDim.new(0, 12)
-yCorner.Parent = yarhmButton
+-- CornerRadius
+local yarhmCorner = Instance.new("UICorner")
+yarhmCorner.CornerRadius = UDim.new(0, 12)
+yarhmCorner.Parent = yarhmButton
 
+-- Click
 yarhmButton.MouseButton1Click:Connect(function()
 	local success, err = pcall(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
@@ -60,12 +69,14 @@ yarhmButton.MouseButton1Click:Connect(function()
 	end
 end)
 
+
+-- Instruction
 local instructionLabel1 = Instance.new("TextLabel")
 instructionLabel1.Name = "Instruction_YARHM"
 instructionLabel1.Parent = scrFrame
 instructionLabel1.Text = "YARHM: Menu for MM2, Forsaken, Flee The Facility, Universal."
 instructionLabel1.Size = UDim2.new(1, -20, 0, 70)
-instructionLabel1.Position = UDim2.new(0, 10, 0, 110)
+instructionLabel1.Position = UDim2.new(0, 10, 0, 80)
 instructionLabel1.BackgroundTransparency = 1
 instructionLabel1.TextColor3 = Color3.fromRGB(220, 220, 220)
 instructionLabel1.Font = Enum.Font.Gotham
@@ -74,6 +85,8 @@ instructionLabel1.TextXAlignment = Enum.TextXAlignment.Left
 instructionLabel1.TextWrapped = true 
 instructionLabel1.TextScaled = false
 
+
+-- AnimalHospital
 local animalhospButton = Instance.new("TextButton")
 animalhospButton.Name = "ANHS"
 animalhospButton.Parent = scrFrame
@@ -85,10 +98,12 @@ animalhospButton.TextColor3 = Color3.new(1, 1, 1)
 animalhospButton.Font = Enum.Font.GothamBold
 animalhospButton.TextSize = 16
 
-local ahCorner = Instance.new("UICorner")
-ahCorner.CornerRadius = UDim.new(0, 12)
-ahCorner.Parent = animalhospButton
+-- CornerRadius
+local animalHospitalCorner = Instance.new("UICorner")
+animalHospitalCorner.CornerRadius = UDim.new(0, 12)
+animalHospitalCorner.Parent = animalhospButton
 
+-- Click
 animalhospButton.MouseButton1Click:Connect(function()
 	local success, err = pcall(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/najzgaming/Animal-hospital/refs/heads/main/AHA.lua"))()
@@ -98,6 +113,7 @@ animalhospButton.MouseButton1Click:Connect(function()
 	end
 end)
 
+-- Instruction
 local instructionLabel2 = Instance.new("TextLabel")
 instructionLabel2.Name = "Instruction_ANHS"
 instructionLabel2.Parent = scrFrame
@@ -113,6 +129,7 @@ instructionLabel2.TextWrapped = true
 instructionLabel2.TextScaled = false
 
 
+-- ESP
 local espButton = Instance.new("TextButton")
 espButton.Name = "ESP"
 espButton.Parent = scrFrame
@@ -124,10 +141,12 @@ espButton.TextColor3 = Color3.fromRGB(17, 17, 17)
 espButton.Font = Enum.Font.GothamBold
 espButton.TextSize = 16
 
+-- CornerRadius
 local espCorner = Instance.new("UICorner")
 espCorner.CornerRadius = UDim.new(0, 12)
 espCorner.Parent = espButton
 
+-- Click
 espButton.MouseButton1Click:Connect(function()
 	local success, err = pcall(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/CmyR7fct"))()
@@ -137,6 +156,8 @@ espButton.MouseButton1Click:Connect(function()
 	end
 end)
 
+
+-- Instruction
 local instructionLabel3 = Instance.new("TextLabel")
 instructionLabel3.Name = "Instruction_ESP"
 instructionLabel3.Parent = scrFrame
