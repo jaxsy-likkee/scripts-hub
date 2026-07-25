@@ -5,7 +5,7 @@ MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MainGui.ResetOnSpawn = false
 
 
--scrFrame
+-- scrFrame
 local scrFrame = Instance.new("ScrollingFrame")
 scrFrame.Name = "scrFrame"
 scrFrame.Parent = MainGui
