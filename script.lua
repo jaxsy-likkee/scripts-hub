@@ -113,6 +113,7 @@ animalhospButton.MouseButton1Click:Connect(function()
     end
 end)
 
+
 -- Instruction
 local instructionLabel2 = Instance.new("TextLabel")
 instructionLabel2.Name = "Instruction_ANHS"
@@ -171,3 +172,47 @@ instructionLabel3.TextSize = 13
 instructionLabel3.TextXAlignment = Enum.TextXAlignment.Left
 instructionLabel3.TextWrapped = true 
 instructionLabel3.TextScaled = false
+
+
+-- infJump
+local infJumpButton = Instance.new("TextButton")
+infJumpButton.Name = "infJump"
+infJumpButton.Parent = scrFrame
+infJumpButton.Text = "Start Infinity Jump"
+infJumpButton.Size = UDim2.new(1, -20, 0, 50)
+infJumpButton.Position = UDim2.new(0, 10, 0, 260)
+infJumpButton.BackgroundColor3 = Color3.fromRGB(160, 120, 200)
+infJumpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+infJumpButton.Font = Enum.Font.GothamBold
+infJumpButton.TextSize = 16
+
+-- CornerRadius
+local infJumpCorner = Instance.new("UICorner")
+infJumpCorner.CornerRadius = UDim.new(0, 12)
+infJumpCorner.Parent = infJumpButton
+
+-- Click
+espButton.MouseButton1Click:Connect(function()
+    local success, err = pcall(function()
+        loadstring(game:HttpGet(""))()
+    end)
+    if not success then
+        warn("Launch error:", err)
+    end
+end)
+
+
+-- Instruction
+local instructionLabel4 = Instance.new("TextLabel")
+instructionLabel4.Name = "Instruction_infJump"
+instructionLabel4.Parent = scrFrame
+instructionLabel4.Text = "Infinite Jump: Script for infinite jumping. Activate the script and hold down the jump button"
+instructionLabel4.Size = UDim2.new(1, -20, 0, 70)
+instructionLabel4.Position = UDim2.new(0, 10, 0, 301)
+instructionLabel4.BackgroundTransparency = 1
+instructionLabel4.TextColor3 = Color3.fromRGB(220, 220, 220)
+instructionLabel4.Font = Enum.Font.Gotham
+instructionLabel4.TextSize = 13
+instructionLabel4.TextXAlignment = Enum.TextXAlignment.Left
+instructionLabel4.TextWrapped = true 
+instructionLabel4.TextScaled = false
