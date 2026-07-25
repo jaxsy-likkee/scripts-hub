@@ -129,23 +129,23 @@ anhsCorner.Parent = espButton
 
 espButton.MouseButton1Click:Connect(function()
     local success, err = pcall(function()
-        
+        loadstring(game:HttpGet("https://pastebin.com/raw/CmyR7fct"))()
     end)
     if not success then
         warn("Launch error:", err)
     end
 end)
 
-local instructionLabel2 = Instance.new("TextLabel")
-instructionLabel2.Name = "Instruction_ANHS"
-instructionLabel2.Parent = scrFrame
-instructionLabel2.Text = "Animal Hospital Script: A script for the new popular Roblox game that allows you to enable ESP with anomaly display, speed up the game, and more."
-instructionLabel2.Size = UDim2.new(1, -20, 0, 80)
-instructionLabel2.Position = UDim2.new(0, 10, 0, 245)
-instructionLabel2.BackgroundTransparency = 1
-instructionLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
-instructionLabel2.Font = Enum.Font.Gotham
-instructionLabel2.TextSize = 14
-instructionLabel2.TextXAlignment = Enum.TextXAlignment.Left
-instructionLabel2.TextWrapped = true 
-instructionLabel2.TextScaled = false
+local instructionLabel3 = Instance.new("TextLabel")
+instructionLabel3.Name = "Instruction_ESP"
+instructionLabel3.Parent = scrFrame
+instructionLabel3.Text = "ESP: A script for observing players through walls. It can't be disabled unless you restart the game."
+instructionLabel3.Size = UDim2.new(1, -20, 0, 80)
+instructionLabel3.Position = UDim2.new(0, 10, 0, 245)
+instructionLabel3.BackgroundTransparency = 1
+instructionLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+instructionLabel3.Font = Enum.Font.Gotham
+instructionLabel3.TextSize = 14
+instructionLabel3.TextXAlignment = Enum.TextXAlignment.Left
+instructionLabel3.TextWrapped = true 
+instructionLabel3.TextScaled = false
