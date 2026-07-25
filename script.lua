@@ -80,7 +80,7 @@ animalhospButton.Text = "Start Animal Hospital Script"
 animalhospButton.Size = UDim2.new(1, -20, 0, 50)
 animalhospButton.Position = UDim2.new(0, 10, 0, 190)
 animalhospButton.BackgroundColor3 = Color3.fromRGB(135, 206, 235)
-animalhospButton.TextColor3 = Color3.new(0, 0, 0)
+animalhospButton.TextColor3 = Color3.new(17, 17, 17)
 animalhospButton.Font = Enum.Font.GothamBold
 animalhospButton.TextSize = 16
 
@@ -91,6 +91,45 @@ anhsCorner.Parent = animalhospButton
 animalhospButton.MouseButton1Click:Connect(function()
     local success, err = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/najzgaming/Animal-hospital/refs/heads/main/AHA.lua"))()
+    end)
+    if not success then
+        warn("Launch error:", err)
+    end
+end)
+
+local instructionLabel2 = Instance.new("TextLabel")
+instructionLabel2.Name = "Instruction_ANHS"
+instructionLabel2.Parent = scrFrame
+instructionLabel2.Text = "Animal Hospital Script: A script for the new popular Roblox game that allows you to enable ESP with anomaly display, speed up the game, and more."
+instructionLabel2.Size = UDim2.new(1, -20, 0, 80)
+instructionLabel2.Position = UDim2.new(0, 10, 0, 245)
+instructionLabel2.BackgroundTransparency = 1
+instructionLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+instructionLabel2.Font = Enum.Font.Gotham
+instructionLabel2.TextSize = 14
+instructionLabel2.TextXAlignment = Enum.TextXAlignment.Left
+instructionLabel2.TextWrapped = true 
+instructionLabel2.TextScaled = false
+
+
+local espButton = Instance.new("TextButton")
+espButton.Name = "ESP"
+espButton.Parent = scrFrame
+espButton.Text = "Start ESP"
+espButton.Size = UDim2.new(1, -20, 0, 50)
+espButton.Position = UDim2.new(0, 10, 0, 190)
+espButton.BackgroundColor3 = Color3.fromRGB(135, 206, 235)
+espButton.TextColor3 = Color3.new(0, 0, 0)
+espButton.Font = Enum.Font.GothamBold
+espButton.TextSize = 16
+
+local anhsCorner = Instance.new("UICorner")
+anhsCorner.CornerRadius = UDim.new(0, 12)
+anhsCorner.Parent = espButton
+
+espButton.MouseButton1Click:Connect(function()
+    local success, err = pcall(function()
+        
     end)
     if not success then
         warn("Launch error:", err)
